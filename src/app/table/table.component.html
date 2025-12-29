@@ -1,0 +1,924 @@
+<hr>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 mb-3">
+            <table class="table table-bordered">
+
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>flowerName</td>
+                    <td>petalCount</td>
+                    <td>fragranceLevel</td>
+                    <td>bloomingSeason</td>
+                    <th>stemLengthCm</th>
+                    <td>edit</td>
+                    <td>remove</td>
+
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let t of flowers; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{t.flowerName}}</td>
+                        <td>{{t.petalCount}}</td>
+                        <td>{{t.fragranceLevel}}</td>
+                        <td>{{t.bloomingSeason}}</td>
+                        <td>{{t.stemLengthCm}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>planetName</td>
+                    <td>distanceFromSunKm</td>
+                    <td>diameterKm</td>
+                    <td>hasRings</td>
+                    <th>numberOnumberOfMoonsfMoons</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of planets; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.planetName}}</td>
+                        <td>{{a.distanceFromSunKm}}</td>
+                        <td>{{a.diameterKm}}</td>
+                        <td>{{a.numberOfMoons}}</td>
+                        <td>{{a.numberOfMoons}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>planetName</td>
+                    <td>distanceFromSunKm</td>
+                    <td>diameterKm</td>
+                    <td>hasRings</td>
+                    <th>numberOnumberOfMoonsfMoons</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of mountains; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.mountainName}}</td>
+                        <td>{{a.mountainName}}</td>
+                        <td>{{a.locationContinent}}</td>
+                        <td>{{a.firstAscentYear}}</td>
+                        <td>{{a.isVolcano}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>uniName</td>
+                    <td>foundedYear</td>
+                    <td>countryLocated</td>
+                    <td>studentCount</td>
+                    <th>worldRanking</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of universities; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.uniName}}</td>
+                        <td>{{a.foundedYear}}</td>
+                        <td>{{a.countryLocated}}</td>
+                        <td>{{a.studentCount}}</td>
+                        <td>{{a.worldRanking}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>species</td>
+                    <td>averageWeightKg</td>
+                    <td>habitatType</td>
+                    <td>lifespanYears</td>
+                    <th>endangeredStatus</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of animals; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.species}}</td>
+                        <td>{{a.averageWeightKg}}</td>
+                        <td>{{a.habitatType}}</td>
+                        <td>{{a.lifespanYears}}</td>
+                        <td>{{a.endangeredStatus}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>appName</td>
+                    <td>categoryType</td>
+                    <td>downloadsMillion</td>
+                    <td>developerCompany</td>
+                    <th>subscriptionRequired</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of apps; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.appName}}</td>
+                        <td>{{a.categoryType}}</td>
+                        <td>{{a.downloadsMillion}}</td>
+                        <td>{{a.developerCompany}}</td>
+                        <td>{{a.subscriptionRequired}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>continentLabel</td>
+                    <td>surfaceAreaMillionSqKm</td>
+                    <td>countriesCount</td>
+                    <td>populationBillion</td>
+                    <th>largestCountry</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of continents; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.continentLabel}}</td>
+                        <td>{{a.surfaceAreaMillionSqKm}}</td>
+                        <td>{{a.countriesCount}}</td>
+                        <td>{{a.populationBillion}}</td>
+                        <td>{{a.largestCountry}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>dessertName</td>
+                    <td>sugarContentGrams</td>
+                    <td>servingTemp</td>
+                    <td>mainIngredient</td>
+                    <th>calorieCount</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of desserts; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.dessertName}}</td>
+                        <td>{{a.sugarContentGrams}}</td>
+                        <td>{{a.servingTemp}}</td>
+                        <td>{{a.mainIngredient}}</td>
+                        <td>{{a.calorieCount}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>oceanTitle</td>
+                    <td>avgDepthMeters</td>
+                    <td>surfaceAreaMillionSqKm</td>
+                    <td>developerCompany</td>
+                    <th>subscriptionRequired</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of oceans; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.oceanTitle}}</td>
+                        <td>{{a.avgDepthMeters}}</td>
+                        <td>{{a.surfaceAreaMillionSqKm}}</td>
+                        <td>{{a.borderingContinents}}</td>
+                        <td>{{a.salinityPpt}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>gadgetLabel</td>
+                    <td>categoryType</td>
+                    <td>batteryLifeHours</td>
+                    <td>connectivityType</td>
+                    <th>weightGrams</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of gadgets; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.gadgetLabel}}</td>
+                        <td>{{a.featuresCount}}</td>
+                        <td>{{a.batteryLifeHours}}</td>
+                        <td>{{a.connectivityType}}</td>
+                        <td>{{a.weightGrams}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>landmarkLabel</td>
+                    <td>heightMeters</td>
+                    <td>visitorCountYearMillion</td>
+                    <td>countryLocation</td>
+                    <th>constructionYear</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of landmarks; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.landmarkLabel}}</td>
+                        <td>{{a.heightMeters}}</td>
+                        <td>{{a.visitorCountYearMillion}}</td>
+                        <td>{{a.countryLocation}}</td>
+                        <td>{{a.constructionYear}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>vehicleType</td>
+                    <td>maxSpeedKph</td>
+                    <td>fuelCapacityLiters</td>
+                    <td>wheelCount</td>
+                    <th>manufacturerLocation</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of vehiclesModels; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.vehicleType}}</td>
+                        <td>{{a.maxSpeedKph}}</td>
+                        <td>{{a.fuelCapacityLiters}}</td>
+                        <td>{{a.wheelCount}}</td>
+                        <td>{{a.manufacturerLocation}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>professionName</td>
+                    <td>avgSalaryUSD</td>
+                    <td>yearsOfStudy</td>
+                    <td>riskLevel</td>
+                    <th>workEnvironment</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of professions; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.professionName}}</td>
+                        <td>{{a.avgSalaryUSD}}</td>
+                        <td>{{a.yearsOfStudy}}</td>
+                        <td>{{a.riskLevel}}</td>
+                        <td>{{a.workEnvironment}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>beverageTitle</td>
+                    <td>caffeineMg</td>
+                    <td>servingSizeMl</td>
+                    <td>servedHot</td>
+                    <th>sugarContentG</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of beveragesMenu; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.beverageTitle}}</td>
+                        <td>{{a.caffeineMg}}</td>
+                        <td>{{a.servingSizeMl}}</td>
+                        <td>{{a.servedHot}}</td>
+                        <td>{{a.sugarContentG}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>flowerName</td>
+                    <td>petalCount</td>
+                    <td>fragranceLevel</td>
+                    <td>bloomingSeason</td>
+                    <th>stemLengthCm</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of flowers; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.flowerName}}</td>
+                        <td>{{a.petalCount}}</td>
+                        <td>{{a.fragranceLevel}}</td>
+                        <td>{{a.bloomingSeason}}</td>
+                        <td>{{a.stemLengthCm}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>hotelLabel</td>
+                    <td>stars</td>
+                    <td>totalRooms</td>
+                    <td>poolAvailable</td>
+                    <th>cityLoc</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of hotels; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.hotelLabel}}</td>
+                        <td>{{a.stars}}</td>
+                        <td>{{a.totalRooms}}</td>
+                        <td>{{a.poolAvailable}}</td>
+                        <td>{{a.cityLoc}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>categoryType</td>
+                    <td>areaSqKm</td>
+                    <td>inhabited</td>
+                    <th>climateType</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of islands; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.islandLabel}}</td>
+                        <td>{{a.areaSqKm}}</td>
+                        <td>{{a.countryAdmin}}</td>
+                        <td>{{a.inhabited}}</td>
+                        <td>{{a.climateType}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>insectName</td>
+                    <td>wingspanCm</td>
+                    <td>legsCount</td>
+                    <td>lifespanDays</td>
+                    <th>canFly</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of insects; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.insectName}}</td>
+                        <td>{{a.wingspanCm}}</td>
+                        <td>{{a.legsCount}}</td>
+                        <td>{{a.lifespanDays}}</td>
+                        <td>{{a.canFly}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>festivalName</td>
+                    <td>monthObserved</td>
+                    <td>developerCompany</td>
+                    <th>outdoorEvent</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of festivals; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.festivalName}}</td>
+                        <td>{{a.monthObserved}}</td>
+                        <td>{{a.durationDays}}</td>
+                        <td>{{a.originCountry}}</td>
+                        <td>{{a.outdoorEvent}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>riverLabel</td>
+                    <td>lengthKm</td>
+                    <td>flowsThroughCountries</td>
+                    <td>avgDepthM</td>
+                    <th>deltaExists</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of rivers; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.riverLabel}}</td>
+                        <td>{{a.lengthKm}}</td>
+                        <td>{{a.flowsThroughCountries}}</td>
+                        <td>{{a.avgDepthM}}</td>
+                        <td>{{a.deltaExists}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>spiceName</td>
+                    <td>colorHue</td>
+                    <td>originRegion</td>
+                    <td>pungencyLevel</td>
+                    <th>isPowdered</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of spices; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.spiceName}}</td>
+                        <td>{{a.colorHue}}</td>
+                        <td>{{a.originRegion}}</td>
+                        <td>{{a.pungencyLevel}}</td>
+                        <td>{{a.isPowdered}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>toolName</td>
+                    <td>weightKg</td>
+                    <td>handleMaterial</td>
+                    <td>manualTool</td>
+                    <th>usageCategory</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of tools; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.toolName}}</td>
+                        <td>{{a.weightKg}}</td>
+                        <td>{{a.handleMaterial}}</td>
+                        <td>{{a.manualTool}}</td>
+                        <td>{{a.usageCategory}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>mineralLabel</td>
+                    <td>hardnessMoh</td>
+                    <td>downloadsMillion</td>
+                    <td>crystalSystem</td>
+                    <th>subscriptionRequired</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of minerals; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.mineralLabel}}</td>
+                        <td>{{a.hardnessMoh}}</td>
+                        <td>{{a.crystalSystem}}</td>
+                        <td>{{a.isMetallic}}</td>
+                        <td>{{a.marketPriceUSDkg}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>moonLabel</td>
+                    <td>orbitingPlanet</td>
+                    <td>downloadsMillion</td>
+                    <td>discoveredYear</td>
+                    <th>surfaceMaterial</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of planetsMoons; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.moonLabel}}</td>
+                        <td>{{a.orbitingPlanet}}</td>
+                        <td>{{a.diameterKm}}</td>
+                        <td>{{a.discoveredYear}}</td>
+                        <td>{{a.surfaceMaterial}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>bandLabel</td>
+                    <td>originCity</td>
+                    <td>formedYear</td>
+                    <td>genreStyle</td>
+                    <th>albumsCount</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of musicalBands; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.bandLabel}}</td>
+                        <td>{{a.originCity}}</td>
+                        <td>{{a.formedYear}}</td>
+                        <td>{{a.genreStyle}}</td>
+                        <td>{{a.albumsCount}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>metroLabel</td>
+                    <td>trackLengthKm</td>
+                    <td>totalStations</td>
+                    <td>dailyRidershipMillion</td>
+                    <th>oprate
+                    </th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of citiesMetro; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.metroLabel}}</td>
+                        <td>{{a.trackLengthKm}}</td>
+                        <td>{{a.totalStations}}</td>
+                        <td>{{a.dailyRidershipMillion}}</td>
+                        <td>{{  a.operatingSince}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>discoveryLabel</td>
+                    <td>discoveredBy</td>
+                    <td>yearMade</td>
+                    <td>developerCompany</td>
+                    <th>fieldArea</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of sciDiscoveries; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.discoveryLabel}}</td>
+                        <td>{{a.discoveredBy}}</td>
+                        <td>{{a.yearMade}}</td>
+                        <td>{{a.impactLevel}}</td>
+                        <td>{{a.fieldArea}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>parkLabel</td>
+                    <td>countryLocated</td>
+                    <td>establishedYear</td>
+                    <td>areaSqKm</td>
+                    <th>annualVisitorsMillion</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of nationalParks; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.parkLabel}}</td>
+                        <td>{{a.countryLocated}}</td>
+                        <td>{{a.establishedYear}}</td>
+                        <td>{{a.areaSqKm}}</td>
+                        <td>{{a.annualVisitorsMillion}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>paintingTitle</td>
+                    <td>artistName</td>
+                    <td>yearCreated</td>
+                    <td>styleType</td>
+                    <th>currentLocation</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of artPaintings; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.paintingTitle}}</td>
+                        <td>{{a.artistName}}</td>
+                        <td>{{a.yearCreated}}</td>
+                        <td>{{a.styleType}}</td>
+                        <td>{{a.currentLocation}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>battleName</td>
+                    <td>battleYear</td>
+                    <td>mainCombatants</td>
+                    <td>outcome</td>
+                    <th>casualtiesApprox</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of historicalBattles; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.battleName}}</td>
+                        <td>{{a.battleYear}}</td>
+                        <td>{{a.mainCombatants}}</td>
+                        <td>{{a.outcome}}</td>
+                        <td>{{a.casualtiesApprox}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>appNawardTitleame</td>
+                    <td>categoryGiven</td>
+                    <td>established</td>
+                    <td>awardCountry</td>
+                    <th>frequencyYears</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of awards; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.awardTitle}}</td>
+                        <td>{{a.categoryGiven}}</td>
+                        <td>{{a.established}}</td>
+                        <td>{{a.awardCountry}}</td>
+                        <td>{{a.frequencyYears}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+               <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>bridgeLabel</td>
+                    <td>lengthMeters</td>
+                    <td>countryLocated</td>
+                    <td>builtYear</td>
+                    <th>materialMain</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of bridges; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.bridgeLabel}}</td>
+                        <td>{{a.lengthMeters}}</td>
+                        <td>{{a.countryLocated}}</td>
+                        <td>{{a.builtYear}}</td>
+                        <td>{{a.materialMain}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+               <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>telescopeName</td>
+                    <td>launchYear</td>
+                    <td>primaryMirrorM</td>
+                    <td>operatorAgency</td>
+                    <th>frequencyYears</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of spaceTelescopes; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.telescopeName}}</td>
+                        <td>{{a.launchYear}}</td>
+                        <td>{{a.primaryMirrorM}}</td>
+                        <td>{{a.operatorAgency}}</td>
+                        <td>{{a.missionStatus}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+               <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>brandLabel</td>
+                    <td>foundedYear</td>
+                    <td>established</td>
+                    <td>productType</td>
+                    <th>annualRevenueBillionUSD</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of fashionBrands; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.brandLabel}}</td>
+                        <td>{{a.foundedYear}}</td>
+                        <td>{{a.originCountry}}</td>
+                       <td>{{a.productType}}</td>
+                       <td>{{a.annualRevenueBillionUSD}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+               <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>instrumentName</td>
+                    <td>categoryFamily</td>
+                    <td>rangeOctaves</td>
+                    <td>madeOf</td>
+                    <th>originCentury</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of musicalInstrumentsPro; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.instrumentName}}</td>
+                        <td>{{a.categoryFamily}}</td>
+                        <td>{{a.rangeOctaves}}</td>
+                        <td>{{a.madeOf}}</td>
+                        <td>{{a.originCentury}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+               <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>browserName</td>
+                    <td>developerOrg</td>
+                    <td>established</td>
+                    <td>engineUsed</td>
+                    <th>platformSupport</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of webBrowsers; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.browserName}}</td>
+                        <td>{{a.developerOrg}}</td>
+                        <td>{{a.firstReleaseYear}}</td>
+                        <td>{{a.engineUsed}}</td>
+                        <td>{{a.platformSupport}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+               <table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>airlineName</td>
+                    <td>categoryGiven</td>
+                    <td>hubAirport</td>
+                    <td>fleetSize</td>
+                    <th>frequencyYears</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of airlines; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.airlineName}}</td>
+                        <td>{{a.foundedYear}}</td>
+                        <td>{{a.hubAirport}}</td>
+                        <td>{{a.fleetSize}}</td>
+                        <td>{{a.allianceMember}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+<table class="table table-bordered">
+                <thead class="bg-danger">
+                    <th>Sr No.</th>
+                    <td>volcanoLabel</td>
+                    <td>categoryGiven</td>
+                    <td>lastEruptionYear</td>
+                    <td>locationIsland</td>
+                    <th>volcanoType</th>
+                    <td>edit</td>
+                    <td>remove</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of volcanoes; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{a.volcanoLabel}}</td>
+                        <td>{{a.heightMeters}}</td>
+                        <td>{{a.lastEruptionYear}}</td>
+                        <td>{{a.locationIsland}}</td>
+                        <td>{{a.volcanoType}}</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

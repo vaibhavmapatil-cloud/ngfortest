@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4 mb-4" *ngFor="let card of products">
+            <mat-card class="example-card h-100 mat-elevation-z8 bg-info">
+                <mat-card-title-group>
+                    <mat-card-title >{{card.title}}</mat-card-title>
+                    <mat-card-subtitle>{{card.category}}</mat-card-subtitle>
+                    <strong> {{card.rating}}</strong>
+                    <img mat-card-lg-image src="{{card.images?.[0]}}">
+                </mat-card-title-group>
+                <mat-card-content>
+                    {{card.description}}
+                    <strong>available: ({{card.minimumOrderQuantity}})</strong>
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions class="d-flex justify-content-between">
+                    
+                    <button mat-raised-button color="primary">buy </button>
+                    <button mat-raised-button color="accent">add to cart</button>
+                
+                </mat-card-actions>
+                
+            </mat-card>
+        </div>
+    </div>
+</div>
