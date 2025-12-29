@@ -2,11 +2,11 @@
     <div class="row">
 
         <div class="col-md-4 mb-4" *ngFor="let card of products">
-            <mat-card class="example-card h-100 mat-elevation-z8 bg-info">
-                <mat-card-title-group>
-                    <mat-card-title >{{card.title}}</mat-card-title>
+            <mat-card class="example-card  mat-elevation-z8 bg-info">
+                <mat-card-title-group >
+                    <mat-card-title class="card-title">{{card.title}}</mat-card-title>
                     <mat-card-subtitle>{{card.category}}</mat-card-subtitle>
-                    <strong> {{card.rating}}</strong>
+
                     <img mat-card-lg-image src="{{card.images?.[0]}}">
                 </mat-card-title-group>
                 <mat-card-content>
