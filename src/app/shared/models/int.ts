@@ -59,3 +59,20 @@ export interface Ion {
   content: string;
 }
 
+export interface Ipro {
+  
+    id: number;
+    professionName: string;
+    avgSalaryUSD: number;
+    yearsOfStudy: number;
+    riskLevel: string;
+    workEnvironment: string;
+
+}
+  export interface Iwork{
+    
+    id: number;
+    title: string;
+    description: string;
+    imgUrl: string;
+  }

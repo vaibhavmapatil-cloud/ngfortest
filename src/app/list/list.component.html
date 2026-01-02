@@ -1,55 +1,66 @@
-
 <div class="container">
   <div class="row">
     <h2>li task</h2>
     <div class="col-md-12  mb-3 text-center bg-info">
-      <ul class="list-group"*ngFor="let li of langs text-center mb-3 ">
-          <li class="list-group-item">
-            {{li}}
-          </li>
+      <ul class="list-group" *ngFor="let li of langs text-center mb-3 ">
+        <li class="list-group-item">
+          {{li}}
+        </li>
       </ul>
     </div>
     <div class="col-md-12 mb-3 text-center bg-info">
-      <ul class="list-group"*ngFor="let im of items text-center mb-3">
-          <li class="list-group-item">
-            {{im}}
-          </li>
+      <ul class="list-group" *ngFor="let im of items text-center mb-3">
+        <li class="list-group-item">
+          {{im}}
+        </li>
       </ul>
     </div>
     <div class="col-md-12 mb-3 text-center bg-info">
-      <ul class="list-group"*ngFor="let hb of hobbies text-center mb-3">
-          <li class="list-group-item">
-            {{hb}}
-          </li>
+      <ul class="list-group" *ngFor="let hb of hobbies text-center mb-3">
+        <li class="list-group-item">
+          {{hb}}
+        </li>
       </ul>
     </div>
     <div class="col-md-12 mb-3 text-center bg-info">
-      <ul class="list-group"*ngFor="let lg of languages text-center mb-3">
-          <li class="list-group-item">
-            {{lg}}
-          </li>
+      <ul class="list-group" *ngFor="let lg of languages text-center mb-3">
+        <li class="list-group-item">
+          {{lg}}
+        </li>
       </ul>
     </div>
     <div class="col-md-12 mb-3 text-center bg-info">
-      <ul class="list-group"*ngFor="let fr of fruits text-center mb-3">
-          <li class="list-group-item">
-            {{fr}}
-          </li>
-      </ul>
-    </div>
-<div class="col-md-12 mb-3 text-center bg-info">
-      <ul class="list-group"*ngFor="let ts of tasks text-center mb-3">
-          <li class="list-group-item">
-            {{ts}}
-          </li>
+      <ul class="list-group" *ngFor="let fr of fruits text-center mb-3">
+        <li class="list-group-item">
+          {{fr}}
+        </li>
       </ul>
     </div>
     <div class="col-md-12 mb-3 text-center bg-info">
-      <ul class="list-group"*ngFor="let s of colors text-center mb-3">
-          <li class="list-group-item">
-            {{s}}
-          </li>
+      <ul>
+        <li class="list-group-item" class="list-group" *ngFor="let ts of tasks text-center mb-3">
+          {{ts}}
+        </li>
       </ul>
+    </div>
+
+    <div class="col-md-12 mb-3 text-center bg-info">
+      <ul class="list-group">
+        <li *ngFor="let s of colors" class="list-group-item text-center mb-3" [ngStyle]="{ 'background-color': s }">
+          {{ s }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-6">
+      <div class="list-group">
+        <div class="list-group-item" *ngFor="let name of names">{{name}}</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="list-group">
+        <div class="list-group-item" *ngFor="let v of names">{{v}}</div>
+      </div>
     </div>
   </div>
 </div>

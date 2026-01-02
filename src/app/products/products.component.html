@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class=" table table-bordered">
+                <thead>
+                    <tr>
+                        <th>planetName</th>
+                        <th>distanceFromSunKm</th>
+                        <th>diameterKm</th>
+                        <th>numberOfMoons</th>
+                        <th>hasRings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let v of planets">
+                        <td>{{v.planetName}}</td>
+                        <td>{{v.distanceFromSunKm}}</td>
+                        <td>{{v.diameterKm}}</td>
+                        <td>{{v.numberOfMoons}}</td>
+                        <td>{{v.hasRings}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

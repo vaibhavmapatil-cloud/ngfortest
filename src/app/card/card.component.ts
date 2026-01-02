@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ancientStructures, boardGames, famousAuthors, famousInventions, famousRivers, festivalsWorld, mountainRanges, movieGenres, musicalGenres, musicalInstrumentsWorld, prehistoricAnimals, spaceMissions, techInnovations, wondersOfNature, worldCuisines } from '../shared/const/data';
-import { Ias, Ibg, Ifa, Ifr, Ifw, Img, Imgp, Imiw, Imr, Ipa, Ism, Iti, Iwc } from '../shared/models/int';
+import { ancientStructures, boardGames, cards, famousAuthors, famousInventions, famousRivers, festivalsWorld, mountainRanges, movieGenres, musicalGenres, musicalInstrumentsWorld, prehistoricAnimals, spaceMissions, techInnovations, wondersOfNature, worldCuisines } from '../shared/const/data';
+import { Ias, Ibg, Ifa, Ifr, Ifw, Img, Imgp, Imiw, Imr, Ipa, Ism, Iti, Iwc, Iwork } from '../shared/models/int';
 
 @Component({
   selector: 'app-card',
@@ -13,6 +13,7 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+works:Array<Iwork>=cards;
  space:Array<Ism>=spaceMissions;
  world:Array<Iwc>=worldCuisines;
  mount:Array<Imr>=mountainRanges;

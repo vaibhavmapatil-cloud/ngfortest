@@ -625,7 +625,7 @@
                         <td>{{a.trackLengthKm}}</td>
                         <td>{{a.totalStations}}</td>
                         <td>{{a.dailyRidershipMillion}}</td>
-                        <td>{{  a.operatingSince}}</td>
+                        <td>{{ a.operatingSince}}</td>
                         <td><button class="btn btn-primary">Edit</button></td>
                         <td><button class="btn btn-danger">Remove</button></td>
                     </tr>
@@ -751,7 +751,7 @@
                     </tr>
                 </tbody>
             </table>
-               <table class="table table-bordered">
+            <table class="table table-bordered">
                 <thead class="bg-danger">
                     <th>Sr No.</th>
                     <td>bridgeLabel</td>
@@ -775,7 +775,7 @@
                     </tr>
                 </tbody>
             </table>
-               <table class="table table-bordered">
+            <table class="table table-bordered">
                 <thead class="bg-danger">
                     <th>Sr No.</th>
                     <td>telescopeName</td>
@@ -799,7 +799,7 @@
                     </tr>
                 </tbody>
             </table>
-               <table class="table table-bordered">
+            <table class="table table-bordered">
                 <thead class="bg-danger">
                     <th>Sr No.</th>
                     <td>brandLabel</td>
@@ -816,14 +816,14 @@
                         <td>{{a.brandLabel}}</td>
                         <td>{{a.foundedYear}}</td>
                         <td>{{a.originCountry}}</td>
-                       <td>{{a.productType}}</td>
-                       <td>{{a.annualRevenueBillionUSD}}</td>
+                        <td>{{a.productType}}</td>
+                        <td>{{a.annualRevenueBillionUSD}}</td>
                         <td><button class="btn btn-primary">Edit</button></td>
                         <td><button class="btn btn-danger">Remove</button></td>
                     </tr>
                 </tbody>
             </table>
-               <table class="table table-bordered">
+            <table class="table table-bordered">
                 <thead class="bg-danger">
                     <th>Sr No.</th>
                     <td>instrumentName</td>
@@ -847,7 +847,7 @@
                     </tr>
                 </tbody>
             </table>
-               <table class="table table-bordered">
+            <table class="table table-bordered">
                 <thead class="bg-danger">
                     <th>Sr No.</th>
                     <td>browserName</td>
@@ -871,7 +871,7 @@
                     </tr>
                 </tbody>
             </table>
-               <table class="table table-bordered">
+            <table class="table table-bordered">
                 <thead class="bg-danger">
                     <th>Sr No.</th>
                     <td>airlineName</td>
@@ -895,7 +895,7 @@
                     </tr>
                 </tbody>
             </table>
-<table class="table table-bordered">
+            <table class="table table-bordered">
                 <thead class="bg-danger">
                     <th>Sr No.</th>
                     <td>volcanoLabel</td>
@@ -922,3 +922,44 @@
         </div>
     </div>
 </div>
+
+<hr>
+<hr>
+<div class="container elevation-z8">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead class="bg-info" >
+                    <tr>
+                        <td>Id</td>
+                        <td>Name</td>
+                        <td>Salery</td>
+                        <td>Study</td>
+                        <td>Level</td>
+                        <td>Work</td>
+                        <td>Edit</td>
+                        <td>Remove</td>
+                    </tr>
+                </thead>
+                <tbody class="bg-danger">
+                    <tr *ngFor="let r of pass">
+                        <td>{{r.id}}</td>
+                        <td>{{r.professionName}}</td>
+                        <td>{{r.avgSalaryUSD}}</td>
+                        <td>{{r.riskLevel}}</td>
+                        <td>{{r.workEnvironment}}</td>
+                        <td>{{r.yearsOfStudy}}</td>
+                        <td><button mat-icon-button color="primary">
+                                <mat-icon>bookmark_manager</mat-icon>
+                            </button></td>
+                        <td><button mat-icon-button color="primary">
+                                <mat-icon>backspace</mat-icon>
+                            </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<hr>
+<hr>

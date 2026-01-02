@@ -32,4 +32,19 @@ languages:Array<string> = ["Hindi", "English", "Marathi", "Gujarati", "Punjabi",
 fruits:Array<string> = ["Apple", "Banana", "Grapes", "Mango", "Orange", "Pineapple", "Watermelon", "Strawberry", "Kiwi", "Papaya"];
  tasks :Array<string>= ["Learn JS", "Build Project", "Practice Daily", "Read Docs", "Watch Tutorials", "Try Challenges", "Learn Node", "Understand APIs", "Test Code", "Write Clean Code"];
 colors:Array<string> = ["red", "green", "blue", "yellow", "purple", "orange", "pink", "brown", "cyan", "magenta"];
+names:Array<string>= ['Rahul', 'Amit', 'Sneha', 'Pooja', 'Kiran'];
+girl:Array<string> = [
+  'Aarti',
+  'Pooja',
+  'Sneha',
+  'Neha',
+  'Priya',
+  'Kajal',
+  'Ritu',
+  'Anjali',
+  'Komal',
+  'Shruti'
+];
+
+
 }

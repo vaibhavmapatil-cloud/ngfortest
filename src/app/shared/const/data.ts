@@ -1,4 +1,31 @@
-import { Ias, Ibg, Ifa, Ifi, Ifr, Ifw, Img, Imgp, Imiw, Imr, Ion, Ipa, Ism, Iti, Iwc } from "../models/int";
+import { Ias, Ibg, Ifa, Ifi, Ifr, Ifw, Img, Imgp, Imiw, Imr, Ion, Ipa, Ipro, Ism, Iti, Iwc, Iwork } from "../models/int";
+
+export const cards:Array<Iwork> = [
+  {
+    id: 1,
+    title: 'Doctor',
+    description: 'Works in hospital and treats patients',
+    imgUrl: 'https://cdn-icons-png.flaticon.com/512/3774/3774299.png'
+  },
+  {
+    id: 2,
+    title: 'Engineer',
+    description: 'Designs and builds systems and structures',
+    imgUrl: 'https://cdn-icons-png.flaticon.com/512/1995/1995574.png'
+  },
+  {
+    id: 3,
+    title: 'Teacher',
+    description: 'Educates students in schools and colleges',
+    imgUrl: 'https://cdn-icons-png.flaticon.com/512/3048/3048122.png'
+  },
+  {
+    id: 4,
+    title: 'Chef',
+    description: 'Prepares and cooks delicious food',
+    imgUrl: 'https://cdn-icons-png.flaticon.com/512/2921/2921822.png'
+  }
+];
 
 export const spaceMissions: Array<Ism> = [
   { title: "Apollo 11", content: "Apollo 11 was the historic NASA mission that first landed humans on the Moon in 1969. Commander Neil Armstrong became the first person to step onto the lunar surface, followed by Buzz Aldrin, while Michael Collins orbited above. It marked a defining moment in human space exploration. The mission inspired generations to dream beyond Earth." },
@@ -132,6 +159,49 @@ export const wondersOfNature: Array<Ion> = [
   { title: "Victoria Falls", content: "Straddling Zambia and Zimbabwe, Victoria Falls is one of the largest waterfalls in the world, renowned for its thunderous roar and misty spray." },
   { title: "Great Barrier Reef", content: "Off Australia’s coast, this coral reef system is the largest on Earth, teeming with marine life. It’s a UNESCO World Heritage Site." },
   { title: "Mount Everest", content: "The tallest mountain above sea level stands in the Himalayas, drawing climbers from across the world despite extreme challenges." }
+];
+
+export const professions:Array<Ipro> = [
+  {
+    id: 1,
+    professionName: 'Doctor',
+    avgSalaryUSD: 120000,
+    yearsOfStudy: 8,
+    riskLevel: 'High',
+    workEnvironment: 'Hospital'
+  },
+  {
+    id: 2,
+    professionName: 'Teacher',
+    avgSalaryUSD: 45000,
+    yearsOfStudy: 4,
+    riskLevel: 'Low',
+    workEnvironment: 'School'
+  },
+  {
+    id: 3,
+    professionName: 'Engineer',
+    avgSalaryUSD: 80000,
+    yearsOfStudy: 4,
+    riskLevel: 'Medium',
+    workEnvironment: 'Office'
+  },
+  {
+    id: 4,
+    professionName: 'Chef',
+    avgSalaryUSD: 50000,
+    yearsOfStudy: 2,
+    riskLevel: 'Medium',
+    workEnvironment: 'Kitchen'
+  },
+  {
+    id: 5,
+    professionName: 'Pilot',
+    avgSalaryUSD: 130000,
+    yearsOfStudy: 3,
+    riskLevel: 'High',
+    workEnvironment: 'Cockpit'
+  }
 ];
 
 

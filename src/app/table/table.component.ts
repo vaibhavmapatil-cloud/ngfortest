@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Ipro } from '../shared/models/int';
+import { professions } from '../shared/const/data';
 
 @Component({
   selector: 'app-table',
@@ -12,7 +14,7 @@ export class TableComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+pass:Array<Ipro>=professions;
 // every table should have sr number 
 
  planets = [

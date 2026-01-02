@@ -11,7 +11,9 @@ import { TableComponent } from './table/table.component';
 import { CardComponent } from './card/card.component';
 import { ProductComponent } from './product/product.component';
 import { MatDividerModule } from '@angular/material/divider';
-
+import { ProjectComponent } from './project/project.component';
+import { ProjectsComponent} from './projects/projects.component';
+import { ProductsComponent } from './products/products.component';
 
 
 @NgModule({
@@ -20,7 +22,10 @@ import { MatDividerModule } from '@angular/material/divider';
     ListComponent,
     TableComponent,
     CardComponent,
-    ProductComponent
+    ProductComponent,
+   ProjectComponent,
+   ProjectsComponent,
+   ProductsComponent
   ],
   imports: [
     BrowserModule,
